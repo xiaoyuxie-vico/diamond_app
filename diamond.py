@@ -21,6 +21,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
+from sklearn.cluster import KMeans
 
 np.set_printoptions(precision=2)
 
@@ -58,6 +59,8 @@ def main():
         # layout='wide'
     )
     st.title('Diamond Price Prediction Service')
+
+    st.write('developed by Xiaoyu Xie and Zhengtao Gan.')
 
     st.image('src/dia.jpg')
     st.image('src/features.jpg')
@@ -213,6 +216,14 @@ def main():
 
         str_1 = 'Predicted price: $ {}'.format(y_test_new[0])
         st.markdown('<p class="L1">{}</p>'.format(str_1), unsafe_allow_html=True)
+
+
+        # X = np.array(X_df_temp[['carat', 'cut', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z']])
+        # y = np.array([y_test_new[0]])
+        # km = KMeans(init='k-means++', n_clusters=4, random_state=0, n_init=10) 
+        # km.fit(X)
+        # centers = km.cluster_centers_
+        # print(centers)
 
 
 if __name__ == '__main__':
