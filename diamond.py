@@ -169,7 +169,7 @@ def main():
     x = st.sidebar.selectbox('x', (xlist))
     y = st.sidebar.selectbox('y', (ylist))
     z = st.sidebar.selectbox('z', (zlist))
-    depth = st.sidebar.selectbox('Aspect ratio (z / mean(x, y))', (depthlist))
+    depth = st.sidebar.selectbox('Aspect ratio (z / mean(x, y) (%))', (depthlist))
 
     if st.sidebar.button("Predict Price"):
         X_test_new = np.array([carat, cut, color, clarity, depth, table, x, y, z]).reshape(-1, 1)
