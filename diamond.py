@@ -164,11 +164,12 @@ def main():
          ('I1', 'IF', 'SI1', 'SI2', 'VS1', 'VS2', 'VVS1', 'VVS2'))
     color = st.sidebar.selectbox('Color', ('D','E','F','G','H','I','J'))
     carat = st.sidebar.selectbox('Carat', (caratlist))
-    table = st.sidebar.selectbox('Table (The width of the diamond\'s table)', (tablelist))
+    table = st.sidebar.selectbox(
+        'Table ratio (width of top of diamond relative to widest point (%))', (tablelist))
     x = st.sidebar.selectbox('x', (xlist))
     y = st.sidebar.selectbox('y', (ylist))
     z = st.sidebar.selectbox('z', (zlist))
-    depth = st.sidebar.selectbox('Depth', (depthlist))
+    depth = st.sidebar.selectbox('Aspect ratio (z / mean(x, y))', (depthlist))
 
     if st.sidebar.button("Predict Price"):
         X_test_new = np.array([carat, cut, color, clarity, depth, table, x, y, z]).reshape(-1, 1)
