@@ -6,22 +6,23 @@
 @date: Sep, 2021
 '''
 
-import io
+# import io
 
-from derivative import dxdt
-import math
+# from derivative import dxdt
+# import math
+# import matplotlib
+# import matplotlib.pyplot as plt
+# from matplotlib.pyplot import MultipleLocator
+# import numpy as np
+# from numpy import linalg as LA
+# import pandas as pd
+# from scipy.linalg import svd
+# import streamlit as st
+# from sklearn.linear_model import Lasso
+
+
+
 import matplotlib
-import matplotlib.pyplot as plt
-from matplotlib.pyplot import MultipleLocator
-import numpy as np
-from numpy import linalg as LA
-import pandas as pd
-from scipy.linalg import svd
-import streamlit as st
-from sklearn.linear_model import Lasso
-
-
-
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -29,6 +30,7 @@ import seaborn as sns
 from sklearn import preprocessing
 import warnings
 warnings.filterwarnings('ignore')
+import streamlit as st
 from scipy import stats
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -142,9 +144,9 @@ def main():
     reg_rf.fit(X_train,y_train.values.ravel())
     y_pred = reg_rf.predict(X_test)
 
-    print("Mean absolute error: {:.2f}".format(mean_absolute_error(y_test, y_pred)))
-    print("Mean squared error: {:.2f}".format(mean_squared_error(y_test, y_pred)))
-    print("R-Squared: {:.2f}".format(r2_score(y_test,y_pred)))
+    # print("Mean absolute error: {:.2f}".format(mean_absolute_error(y_test, y_pred)))
+    # print("Mean squared error: {:.2f}".format(mean_squared_error(y_test, y_pred)))
+    # print("R-Squared: {:.2f}".format(r2_score(y_test,y_pred)))
 
     depthlist = []
     tablelist = []
@@ -226,15 +228,8 @@ def main():
         X_test_new = scaler.transform(X_df_temp)
         y_test_new = reg_rf.predict(X_test_new)
 
-        str_1 = 'Predicted price: {}'.format(y_test_new[0])
+        str_1 = 'Predicted price: $ {}'.format(y_test_new[0])
         st.markdown('<p class="L1">{}</p>'.format(str_1), unsafe_allow_html=True)
-
-        if y_test_new[0] > 
-
-        str_2 = 'Predicted label: {}'.format(y_test_new[0])
-        st.markdown('<p class="L1">{}</p>'.format(str_2), unsafe_allow_html=True)
-
-
 
 
 if __name__ == '__main__':
