@@ -6,27 +6,10 @@
 @date: Sep, 2021
 '''
 
-# import io
-
-# from derivative import dxdt
-# import math
-# import matplotlib
-# import matplotlib.pyplot as plt
-# from matplotlib.pyplot import MultipleLocator
-# import numpy as np
-# from numpy import linalg as LA
-# import pandas as pd
-# from scipy.linalg import svd
-# import streamlit as st
-# from sklearn.linear_model import Lasso
-
-
-
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import seaborn as sns
 from sklearn import preprocessing
 import warnings
 warnings.filterwarnings('ignore')
