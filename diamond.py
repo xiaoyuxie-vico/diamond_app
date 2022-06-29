@@ -217,7 +217,6 @@ def main():
 
         str_1 = 'Predicted price: $ {}'.format(y_test_new[0])
         st.markdown('<p class="L1">{}</p>'.format(str_1), unsafe_allow_html=True)
-        st.markdown('Code can be found at: https://github.com/xiaoyuxie-vico/diamond_app')
 
         # X = np.array(X_df_temp[['carat', 'cut', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z']])
         # y = np.array([y_test_new[0]])
