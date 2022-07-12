@@ -218,6 +218,9 @@ def main():
 
         str_1 = 'Predicted price: $ {}'.format(y_test_new[0])
         st.markdown('<p class="L1">{}</p>'.format(str_1), unsafe_allow_html=True)
+        
+        st.markdown('<p class="L1">References:</p>', unsafe_allow_html=True)
+        st.markdown('Streamlit tutorials: https://www.youtube.com/watch?v=ZZ4B0QUHuNc&list=PLtqF5YXg7GLmCvTswG32NqQypOuYkPRUE')
 
         # X = np.array(X_df_temp[['carat', 'cut', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z']])
         # y = np.array([y_test_new[0]])
