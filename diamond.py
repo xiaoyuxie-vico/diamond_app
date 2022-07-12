@@ -60,7 +60,7 @@ def main():
     )
     st.title('Diamond Price Prediction Service')
     st.markdown('<p class="L2">developed by Xiaoyu Xie and Zhengtao Gan.</p>', unsafe_allow_html=True)
-    st.markdown('<p class="L2">Source code: https://github.com/xiaoyuxie-vico/diamond_app.</p>', unsafe_allow_html=True)
+    st.markdown('Source code: https://github.com/xiaoyuxie-vico/diamond_app.')
     
     st.image('src/dia.jpg')
     st.image('src/features.jpg')
