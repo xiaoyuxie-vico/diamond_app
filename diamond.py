@@ -60,8 +60,7 @@ def main():
     )
     st.title('Diamond Price Prediction Service')
     st.markdown('<p class="L2">developed by Xiaoyu Xie and Zhengtao Gan.</p>', unsafe_allow_html=True)
-    st.markdown('Source code: https://github.com/xiaoyuxie-vico/diamond_app.')
-    st.markdown('[Streamlit tutorials](https://www.youtube.com/watch?v=ZZ4B0QUHuNc&list=PLtqF5YXg7GLmCvTswG32NqQypOuYkPRUE)')
+    st.markdown('Find more: [Source code](https://github.com/xiaoyuxie-vico/diamond_app), [Streamlit tutorials](https://www.youtube.com/watch?v=ZZ4B0QUHuNc&list=PLtqF5YXg7GLmCvTswG32NqQypOuYkPRUE)')
 
     st.image('src/dia.jpg')
     st.image('src/features.jpg')
