@@ -60,6 +60,7 @@ def main():
     )
     st.title('Diamond Price Prediction Service')
     st.markdown('<p class="L2">developed by Xiaoyu Xie and Zhengtao Gan.</p>', unsafe_allow_html=True)
+    st.markdown('Find more: [Source code](https://github.com/xiaoyuxie-vico/diamond_app), [Streamlit tutorials](https://www.youtube.com/watch?v=ZZ4B0QUHuNc&list=PLtqF5YXg7GLmCvTswG32NqQypOuYkPRUE)')
 
     st.image('src/dia.jpg')
     st.image('src/features.jpg')
@@ -217,8 +218,7 @@ def main():
 
         str_1 = 'Predicted price: $ {}'.format(y_test_new[0])
         st.markdown('<p class="L1">{}</p>'.format(str_1), unsafe_allow_html=True)
-
-
+        
         # X = np.array(X_df_temp[['carat', 'cut', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z']])
         # y = np.array([y_test_new[0]])
         # km = KMeans(init='k-means++', n_clusters=4, random_state=0, n_init=10) 
