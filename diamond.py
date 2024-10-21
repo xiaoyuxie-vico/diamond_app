@@ -96,7 +96,7 @@ def main():
     
     def preprocessing(df):
         df.drop("Unnamed: 0", axis=1, inplace=True)
-        df[['x','y','z']] = df[['x','y','z']].replace(0,np.NaN)
+        df[['x','y','z']] = df[['x','y','z']].replace(0,np.nan)
         df.dropna(inplace=True)
 
         col_names = df.columns.tolist()
